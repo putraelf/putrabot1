@@ -36,7 +36,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Admin Ainebot\n' 
             + 'ORG: Pengembang AINEBOT;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62895330379186:+62 895-3303-79186\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6281253534285:+62 812-5353-4285\n' 
             + 'END:VCARD'
 prefix = '#'
 blocked = []   
@@ -278,7 +278,15 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Hallo* 👋 @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\nSemoga betah ya di sini 😅\nJangan lupa intro @${num.split('@')[0]} 😅*`
+				teks = `*Hallo* 👋 @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\nSemoga betah ya di sini╭══════•›⸙ ━✪━ ⸙‹•═══════
+│ 𒈞ℕ𝔼𝕎 𝕄𝔼𝕄𝔹𝔼ℝ 𝕀ℕ𝕋ℝ𝕆𒈞
+ ¦  by admin :ไفتر علف ๅื
+     Wa.me//6281253534285 •°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•
+│ Nama  :  
+│ Umur   :  
+ ¦  Status : 
+ |  Askot  : 
+╰═══════⸙ ━✪━ ⸙    ════════  😅\nJangan lupa intro @${num.split('@')[0]} 😅*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				} else if (anu.action == 'remove') {
@@ -606,7 +614,7 @@ client.on('group-participants-update', async (anu) => {
 				arugazzz = body.slice(10)
 				reply(ind.wait())
 				arugazzz = await getBuffer(`https://arugaz.my.id/api/textpro/firework?text=${arugazzz}`)
-				client.sendMessage(from, arugazzz, image, {caption: 'Nih kak udah jadi..', quoted: mek})
+				client.sendMessage(from, arugazzz, image, {caption: 'Nih sudah jadi bang jago, kalau perintah cukup 1 kali..', quoted: mek})
 				await limitAdd(sender)
 				break
 			case 'lava':
@@ -703,7 +711,7 @@ client.on('group-participants-update', async (anu) => {
                                 if (args.length < 1) return reply('Kakak afk karena apa?')
                                 var nom = mek.participant
                                 const tag = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} *SEDANG AFK ${tels} JANGAN GANGGU YA*`,
+                                                text: `@${nom.split("@s.whatsapp.net")[0]} *SEDANG AFK ${tels} Admin sedang off, Jangan ada keributan ya.*`,
                                                 contextInfo: { mentionedJid: [nom] }
                                         }
                                         client.sendMessage(from, tag, text, {quoted: mek})
@@ -970,7 +978,7 @@ client.on('group-participants-update', async (anu) => {
 			case 'snk':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Syarat & Ketentuan Ainebot*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
+					teks = `*Syarat & Ketentuan Mybot PutraBot*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1013,7 +1021,7 @@ client.on('group-participants-update', async (anu) => {
 					reply(ind.wait())
 					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=random`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'Nih udah jadi kak..', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'Nih udah jadi kak bagus kan quotemaker nya:)..', quoted: mek})
 					await limitAdd(sender)
 					break
 			case 'truth':
@@ -1174,7 +1182,7 @@ client.on('group-participants-update', async (anu) => {
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(ind.stikga())
 					anu = await fetchJson(`https://arugaz.my.id/api/media/ytmus?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `❏ *Title* : ${anu.titleInfo}\n\n❏ *Tunggu Bentar Ya Kak, Audionya Lagi Di Kirim...*`
+					teks = `❏ *Title* : ${anu.titleInfo}\n\n❏ *Tunggu Bentar Ya Kak, Audionya Lagi Di Kirim, jangan nyepam kalau pake...*`
 					thumb = await getBuffer(anu.getImages)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.getAudio)
