@@ -44,8 +44,8 @@ limitawal = '20'
 cr = '*BOT INI SUDAH TERVERIFIKASI*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895330379186@s.whatsapp.net"] 
-const pacarNumber = ["62895321438933@s.whatsapp.net"]
+const ownerNumber = ["6281253534285@s.whatsapp.net"] 
+const pacarNumber = ["6281253534285@s.whatsapp.net"]
 /************************************/
 
        
@@ -963,7 +963,7 @@ client.on('group-participants-update', async (anu) => {
 			case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/62895330379186\n*Ig owner* : www.instagram.com/anemio999\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					teks = `*INFO OWNER*\n*Owner bot* : PUTRA ELF NARNIA\n*No Owner* : wa.me/6281253534285\n*Ig owner* : www.instagram.com/PutraElf\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1358,10 +1358,10 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, yeh, text, {quoted: mek})
 					await limitAdd(sender)
 					break
-			case 'gcainebot':
+			case 'gcmybot':
 					if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
-					client.sendMessage(from, 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'https://chat.whatsapp.com/I0ASKkgD7hg9sOS4kc2kho',MessageType.text, { quoted: mek} )
 					await limitAdd(sender)
 					break
 			case 'tagall':
